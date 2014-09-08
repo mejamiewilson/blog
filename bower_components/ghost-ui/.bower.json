@@ -1,0 +1,34 @@
+{
+  "name": "ghost-ui",
+  "version": "0.8.13",
+  "authors": [
+    "Ghost Foundation"
+  ],
+  "description": "The user interface framework for the Ghost blogging platform.",
+  "keywords": [
+    "ghost"
+  ],
+  "license": "MIT",
+  "homepage": "https://ghost.org",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "test",
+    "tests",
+    "CONTRIBUTING.md"
+  ],
+  "dependencies": {
+    "normalize-scss": "~3.0.1"
+  },
+  "_release": "0.8.13",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.8.13",
+    "commit": "25270f1151cc6aea252e5a0e4292ae8ce025be36"
+  },
+  "_source": "git://github.com/TryGhost/Ghost-UI.git",
+  "_target": "0.8.13",
+  "_originalSource": "ghost-ui"
+}

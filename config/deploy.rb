@@ -9,7 +9,7 @@ set :deploy_to, '/var/app/blog'
 # set :format, :pretty
 # set :log_level, :debug
 set :pty, true
-set :npm_flags, '--production --silent --spin false'
+set :npm_flags, '--silent --spin false'
 # set :linked_files, %w{config/database.yml}
 set :linked_dirs, %w{log content/images}
 
