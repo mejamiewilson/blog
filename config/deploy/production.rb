@@ -4,7 +4,7 @@ set :node_env, :production
 
 # set :hipchat_env, "production"
 
-server '128.199.216.127', user: 'deploy', password:'so fantastical', roles: %w{web app}                     #add more / different roles
+server '128.199.216.127', user: 'root', roles: %w{web app}                     #add more / different roles
 # server 'go.hoistapps.com:5020', user: 'hoi-apps', roles: %w{web app}
 
 set :ssh_options, {

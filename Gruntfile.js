@@ -233,7 +233,7 @@ var path           = require('path'),
                 // Used as part of `grunt init`. See the section on [Building Assets](#building%20assets) for more
                 // information.
                 ghost_ui: {
-                    command: path.resolve(cwd  + '/node_modules/.bin/bower update ghost-ui'),
+                    command: path.resolve(cwd  + '/node_modules/.bin/bower update ghost-ui --allow-root'),
                     options: {
                         stdout: true
                     }
@@ -853,7 +853,7 @@ var path           = require('path'),
         // `bower` does have some quirks, such as not running as root. If you have problems please try running
         // `grunt init --verbose` to see if there are any errors.
         grunt.registerTask('init', 'Prepare the project for development',
-            ['shell:bower', 'shell:ghost_ui', 'update_submodules', 'default']);
+            ['shell:bower', 'shell:ghost_ui --allow-root', 'update_submodules', 'default']);
 
         // ### Production assets
         // `grunt prod` - will build the minified assets used in production.
