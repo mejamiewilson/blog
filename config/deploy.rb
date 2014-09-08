@@ -9,7 +9,7 @@ set :deploy_to, '/var/app/blog'
 # set :format, :pretty
 # set :log_level, :debug
 set :pty, true
-set :npm_flags, '--silent --spin false'
+set :npm_flags, '--production --silent --spin false'
 # set :linked_files, %w{config/database.yml}
 set :linked_dirs, %w{log content/images}
 
@@ -21,7 +21,7 @@ namespace :deploy do
   desc 'Restart application'
   task :restart do
     on roles(:web) do
-      execute "cd #{current_path} && grunt init && grunt prod"
+      #execute "cd #{current_path} && grunt init && grunt prod"
       #restart existing process
       pm2_restart_command = "cd #{current_path} && pm2 restart #{fetch(:application)}-web; true"
       puts pm2_restart_command
